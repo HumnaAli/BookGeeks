@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--This is the title of the document-->
+     <title>BookGeeks</title>
+      <!--linking this html page to its respective css page-->
+     <link rel="stylesheet" href="quotes.css">
+</head>
+<body>
+     <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+    <!--Creating a menu-->
+    <div class="wrapper">
+        <!--<ul> is an unordered list where the order of the is not important-->
+        <ul>
+            <!--<li> is list items and is usually under <ul>-->
+            <li><a href="home.html">HOME</a></li>
+            <!-- a href used to tag another html page-->
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                <!--Creating a drop down menu-->
+                <ul>
+                    <li><a href="romance.html">ROMANCE</a></li>
+                    <li><a href="fiction.html">FICTION</a></li>
+                    <li><a href="nonfiction.html">NON-FICTION</a></li>
+                    <li><a href="horror.html">HORROR</a></li>
+                </ul>
+            </li><!--ending the drop down here-->
+            <!--the class="active" is applied to the navigation element the user is currently viewing-->
+            <li class="active"> <a href="quotes.html">QUOTES</a></li>
+        </ul>
+    </div><!--Ending the menu here-->
+
+    <div class="title">
+        <h1>Famous Quotes</h1><!--Main headings-->
+    </div>
+    <div class="button"><!--creating a section whose class is defined which would be later modified in the css page-->
+        <h2>“The simple things are also the most extraordinary things, and only the wise can see them.” -THE ALCHEMIST</h2>
+    </div>
+    <div class="button1">   
+        <h2>“Parents can only give good advice or put them on the right paths, but the final forming of a person's character lies in their own hands.”
+            ― Anne Frank</h2>
+    </div>
+    <div class="button2">
+        <h2>“Becoming fearless isn’t the point. That’s impossible. It’s learning how to control your fear, and how to be free from it.”VERONICA ROTH-DIVERGENT</h2>
+    </div>
+    <div class="button3">
+        <h2>“It may be unfair, but what happens in a few days, sometimes even a single day, can change the course of a whole lifetime...”
+            ― Khaled Hosseini, The Kite Runner</h2>
+    </div>
+</body>
+</html>

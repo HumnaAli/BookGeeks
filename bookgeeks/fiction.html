@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--This is the title of the document-->
+     <title>BookGeeks</title>
+    <!--linking this html page to its respective css page-->
+    <link rel="stylesheet" href="fiction.css">
+    
+</head>
+<body>
+            <h1>FICTION</h1><!--Main heading-->
+            <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+            <!--Creating a menu-->
+            <div class="wrapper">
+                <ul>
+                    <!--<ul> is an unordered list where the order of the is not important-->
+                     <!--<li> is list items and is usually under <ul>-->
+                    <li><a href="home.html">HOME</a></li>
+                      <!-- a href used to tag another html page-->
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                        <!--Creating a drop down menu-->
+                        <ul>
+                            <li><a href="romance.html">ROMANCE</a></li>
+                            <li class="active"><a href="home.html">FICTION</a></li>
+                            <!--the class="active" is applied to the navigation element the user is currently viewing-->
+                            <li><a href="nonfiction.html">NON-FICTION</a></li>
+                            <li><a href="horror.html">HORROR</a></li>
+                        </ul>
+                    </li><!--ending the drop down here-->
+                    <li> <a href="quotes.html">QUOTES</a></li>
+                </ul>
+            </div><!--Ending the menu here-->
+
+            <div class="container"><!--creating a section whose class is defined which would be later modified in the css page-->
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/1984.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:1984</h2>
+                        <p>Theme:It presents the type of government where even the head is unknown
+                           to the public. They make the society believe in their lies which was a high alert for the people.</p>
+                        <p>Genre:Political fiction</p>
+                        <p>Author:George Orwell</p>
+                        <button><a href="https://www.goodreads.com/book/show/40961427-1984?from_search=true&from_srp=true&qid=TrgqKOzEwa&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/splendid.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:A Thousand Splendid Sun</h2>
+                        <p>Theme:The primary theme in the novel A Thousand Splendid Suns is the rights of women, especially under the Taliban.</p>
+                        <p>Genre:Domestic Fiction</p>
+                        <p>Author: Khaled Hosseini</p>
+                        <button><a href="https://www.goodreads.com/book/show/128029.A_Thousand_Splendid_Suns?ac=1&from_search=true&qid=7jYyZH9pzp&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+            <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/divergent.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:Divergent</h2>
+                        <p>Theme:Set in a futuristic city, once Chicago, the population has been segregated into factions so that the residents may live in harmony and all contribute to society using their best attributes.</p>
+                        <p>Genre:Adult fiction,Science fiction</p>
+                        <p>Author:Veronica Roth</p>
+                        <button><a href="https://www.goodreads.com/book/show/13335037-divergent?ac=1&from_search=true&qid=kzwAGDay9n&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/booktheif.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title: The Book Thief</h2>
+                        <p>Theme:The Book Thief is about a young girl, Liesel, growing up in Germany amidst World War II,who steals many books.</p>
+                        <p>Genre: Historical Fiction</p>
+                        <p>Author:Markus Zusak</p>
+                        <button><a href="https://www.goodreads.com/book/show/19063.The_Book_Thief?ac=1&from_search=true&qid=FHB5Ixe4VG&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+            </div><!--end of container-->
+</body>
+</html>

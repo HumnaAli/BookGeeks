@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--This is the title of the document-->
+     <title>BookGeeks</title>
+      <!--linking this html page to its respective css page-->
+    <link rel="stylesheet" href="nonfiction.css">
+    
+</head>
+<body>
+            <h1>NON-FICTION</h1><!--Main heading-->
+              <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+    <!--Creating a menu-->
+            <div class="wrapper">
+                <ul>
+                    <!--<ul> is an unordered list where the order of the is not important-->
+                     <!--<li> is list items and is usually under <ul>-->
+                     
+                    <li><a href="home.html">HOME</a></li>
+                     <!-- a href used to tag another html page-->
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                        <!--Creating a drop down menu-->
+                        <ul>
+                            <li><a href="romance.html">ROMANCE</a></li>
+                            <li><a href="fiction.html">FICTION</a></li>
+                             <!--the class="active" is applied to the navigation element the user is currently viewing-->
+                            <li class="active"><a href="nonfiction.html">NON-FICTION</a></li>
+                            <li><a href="horror.html">HORROR</a></li>
+                        </ul>
+                    </li><!--ending the drop down here-->
+                    <li> <a href="quotes.html">QUOTES</a></li>
+                </ul>
+            </div><!--Ending the menu here-->
+
+            <div class="container"><!--creating a section whose class is defined which would be later modified in the css page-->
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/intothinair.jpg"  alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:Into Thin Air</h2>
+                        <p>Theme:Guilt. A personal account of a disater on Everest.</p>
+                        <p>Genre: Non Fiction</p>
+                        <p>Author: Jon Krakauer</p>
+                        <button><a href="https://www.goodreads.com/book/show/1898.Into_Thin_Air?ac=1&from_search=true&qid=iTww4Jrjh6&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/anne.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content">
+                        <h2>Title:The Diary Of A Young Girl</h2>
+                        <p>Theme: The Diary of Anne Frank was inner conflict. Anne was constantly at odds with herself. That conflict translated to how she dealt with everyone else while in hiding. The tight space created conflict for everyone in the Annex on a daily basis.</p>
+                        <p>Genre:Non Fiction</p>
+                        <p>Author: Anne Frank</p>
+                        <button><a href="https://www.goodreads.com/book/show/18692431-everything-everything/">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+            <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/evolution.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content">
+                        <h2>Title: The Evolution Of Everything</h2>
+                        <p>Theme:Working from the idea that evolution is “happening all around us” and is “the best way of understanding how the human world changes, as well as the natural world,”</p>
+                        <p>Genre: Non Fiction</p>
+                        <p>Author:Matt Ridley</p>
+                        <button><a href="https://www.goodreads.com/book/show/25816925-the-evolution-of-everything?ac=1&from_search=true&qid=dggp268IxB&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+        
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/thewarmthofothersuns.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content">
+                        <h2>Tile: The Warmth Of Other Suns</h2>
+                        <p>Theme:The Epic Story of America's Great Migration.</p>
+                        <p>Genre: Non Fiction</p>
+                        <p>Author:Isabel Wilkerson</p>
+                        <button><a href="https://www.goodreads.com/book/show/8171378-the-warmth-of-other-suns">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+            </div><!--end of container-->
+</body>
+</html>

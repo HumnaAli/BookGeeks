@@ -1,0 +1,101 @@
+*{/*selects all elements for the whole css overall*/
+    margin:0;/*used to create space around elements outside the border, top and bottom margin is 0*/
+    padding:0;/*space between the border and the content,set to 0*/
+    font-family: 'Oswald', sans-serif;/*the font for the whole page*/
+}
+body{
+    background: url(images/about.jpg) no-repeat;/*background repeating once*/
+    background-size: cover;/*background image to cover the entire container*/
+    background-position: center center;
+    height: 100vh;/*vh is viewport height*/
+}
+ul{/*setting the scetion ul*/
+    float: right;/*content to the right side os the page*/
+    list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 25px;/*set the top margin of an element to 40px*/
+  }
+  ul li{/*styling the li tag in the ul*/
+      display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+  }
+ul li a{/*styling the a tag */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;/* set to top 5 pixels and right 20 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    transition: 0.6s ease;/*transition duration, ease used to specifies a transition effect with a slow start, then fast, then end slowly (this is default)*/
+}
+ul li.active a{/*active used to select and style the active link in the li section which is in the ul section.*/
+    background-color: #fff;
+    color: #000;
+}
+ul li a:hover{/*hover used to select elements when you mouse over them*/
+    background-color:#fff;
+    color: #000;
+}
+.wrapper{/*styling the div class wrapper*/
+    float: right;/*content to the right side os the page*/
+    list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 40px;/*set the top margin of an element to 40px*/
+    
+}
+.wrapper ul{/* styling the wrapper section and the sub section ul*/
+    list-style: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 2%;/*set the top margin of an element to 2%*/
+    display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+}
+.wrapper ul li{/*styling the wrapper section and its sub section ul and its sub section li*/
+    background: transparent;/*the background is transparent so anything behind it can be seen*/
+    width: 170px;/*width set to 170 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    height: 50px;/*height set to 50 pixels*/
+    line-height: 50px;/*specifies the height of a line here it is set to 50 pixels*/
+    text-align: center;/*the alingnment of the text is set to the center*/
+    float: left;/*content to the left side os the page if it was right the order of the boxes would be changed*/
+    color: #fff;
+    font-size: 17px;/*font size is 17 pixels*/
+    position: relative;/*specify a length relative to another length property*/ 
+   
+}
+.wrapper ul ul{/*styling the wrapper section and its sub section ul and its sub section ul*/
+    display: none;/*not displaying the drop down*/
+}
+.wrapper ul li:hover>ul{
+    display: block;
+}
+.about{/*styling the div class about*/
+    min-height: 100vh;/*minimum height set ti 100 viewport height*/
+    display: flex;
+    align-items: center;/*aligning items to center*/
+
+}
+.inner-section{/*styling the div class inner section*/
+    width: 60%;/*width set to 60%*/
+    position: relative;/*specify a length relative to another length property*/
+    right: -20%;/*right side of the page set to -20%*/
+    bottom: -40px;/*bottom of the page set to -40%*/
+    background-color: rgb(252, 236, 168);
+    padding: 115px;/*space between the border and the content,set to 115 pixels*/
+    box-shadow: 12px 12px 8px rgb(0,0,0.3);/* offset-x | offset-y | blur-radius | color */
+    overflow-y: hidden;
+}
+.inner-section h1{/*styling the div class inner section with sub section h1*/
+    margin-bottom: 30px;/*set bottom margin to 30 pixels*/
+    font-size: 30px;/*font size set to 30 pixels*/
+    color: rgb(53, 77, 27);
+}
+.inner-section{/*styling div inner section*/
+    width: 100%;/*width set to 100%*/
+}
+
+.inner-section h2{/*styling div class inner section with sub section h2*/
+    margin-bottom: 40px;/*set bottom margin to 40px*/
+    font-size: 30px;/*font size set to 30 pixels*/
+    color: rgb(53, 77, 27);
+}
+.text{/*styling p tag with class text*/
+    font-size: 18px;/*font size set to 18 pixels*/
+    color: #102509;
+    text-align: justify;/*Stretches the lines so that each line has equal width*/
+    margin-bottom: 40px;/*set bottom margin to 40 pixels*/
+}
+

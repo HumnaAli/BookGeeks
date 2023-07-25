@@ -1,0 +1,87 @@
+*{ /*selects all elements for the whole css overall*/
+    margin:0;/*used to create space around elements outside the border, top and bottom margin is 0*/
+    padding:0;/*space between the border and the content,set to 0*/
+    font-family: 'Oswald', sans-serif;/*the font for the whole page*/
+}
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/about1.jpg);/* A gradient going from the top to bottom*/   
+    background-size: cover;/*specify the size of background images which is cover*/
+    background-position: center center;
+    height: 100vh;/*vh is viewport height*/
+}
+.wrapper{/*styling the div class wrapper*/
+    float: right;/*content to the right side os the page*/
+    list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 40px;/*set the top margin of an element to 40px*/
+}
+.wrapper ul{/* styling the wrapper section and the sub section ul*/
+    list-style: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 2%;/*set the top margin of an element to 2%*/
+    display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+}
+ul{/*setting the scetion ul*/
+    float: right;/*content to the right side os the page*/
+    list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+    margin-top: 25px;/*set the top margin of an element to 25px*/
+  }
+ul li{/*styling the li tag in the ul*/
+      display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+  }
+ul li a{/*styling the a tag */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;/* set to top 5 pixels and right 20 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    transition: 0.6s ease;/*transition duration, ease used to specifies a transition effect with a slow start, then fast, then end slowly (this is default)*/
+}
+ul li.active a{/*active used to select and style the hyperlink in the li section which is in the ul section.*/
+    background-color: #fff;
+    color: #000;
+}
+ul li a:hover{/*hover used to select elements when you mouse over them*/
+    background-color:#fff;
+    color: #000;
+}
+.wrapper ul li{/*styling the wrapper section and its sub section ul and its sub section li*/
+    background: transparent;/*the background is transparent so anything behind it can be seen*/
+    width: 170px;/*width set to 170 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    height: 50px;/*height set to 50 pixels*/
+    line-height: 50px;/*specifies the height of a line here it is set to 50 pixels*/
+    text-align: center;/*the alingnment of the text is set to the center*/
+    float: left;/*content to the left side os the page if it was right the order of the boxes would be changed*/
+    color: #fff;
+    font-size: 17px;/*font size is 17 pixels*/
+    position: relative;/*specify a length relative to another length property*/ 
+}
+.wrapper ul ul{/*styling the wrapper section and its sub section ul and its sub section ul*/
+    display: none;/*not displaying the drop down*/
+}
+.wrapper ul li:hover>ul{
+    display: block;/*displays drop down when mosue is on genre*/
+}
+.title{/*styling the div class title*/
+    position: absolute;/*units are fixed and a length expressed in any of these will appear as exactly that size*/
+    top: 40%;/*top of the page set to 40%*/
+    left: 50%;/*left of the page set to 50%*/
+    transform: translate(-50%,-50%);/*leftward by 50% of the width, along the x-axis, and upward by 50% of the height, along the y-axis*/
+}
+.title h1{/*styling the section title and its sub section h1*/
+    color: #fff;
+    font-size: 100px;/*font sixe set to 100 pixels*/
+}
+.button{/*styling the div class button*/
+    position: absolute;/*units are fixed and a length expressed in any of these will appear as exactly that size*/
+    top: 69%;/*top of the page set to 69%*/
+    left: 50%;/*left of the page set to 50%*/
+    transform: translate(-50%,-50%) ;/**leftward by 50% of the width, along the x-axis, and upward by 50% of the height, along the y-axis*/
+}
+.button h2{/*styling the section button and its sub section h2*/
+    color: #fff;
+    font-size: 30px;/*font size set to 30 pixels*/
+}
+
+
+
+
+

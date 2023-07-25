@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--This is the title of the document-->
+     <title>BookGeeks</title>
+     <!--linking this html page to its respective css page-->
+     <link rel="stylesheet" href="about.css">
+</head>
+<body>
+     <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+    <!--Creating a menu-->
+    <div class="wrapper">
+         <!--<ul> is an unordered list where the order of the is not important-->
+        <ul>
+            <!--<li> is list items and is usually under <ul>-->
+            <!--the class="active" is applied to the navigation element the user is currently viewing-->
+            <li><a href="home.html">HOME</a></li>
+             <!-- a href used to tag another html page-->
+            <li class="active"><a href="about.html">ABOUT</a></li>
+            <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                <!--Creating a drop down menu-->
+                <ul>
+                    <li><a href="romance.html">ROMANCE</a></li>
+                    <li><a href="fiction.html">FICTION</a></li>
+                    <li><a href="nonfiction.html">NON-FICTION</a></li>
+                    <li><a href="">HORROR</a></li>
+                </ul>
+            </li><!--ending the drop down here-->
+            <li><a href="quotes.html">QUOTES</a></li>
+        </ul>
+    </div><!--Ending the menu here-->
+        <div class="about"><!--creating a section whose class is defined which would be later modified in the css page-->
+            <div class="inner-section"><!--creating a sub section whose class is defined which would be later modified in the css page-->
+                <h1>About Us</h1><!--main heading-->
+                <h2>Welcome To BookGeeks</h2><!--next heading after h1-->
+                <p class="text"><!--creating a paragraph with class text which would be later modified in the css page-->
+                    The goal of BookGeeks is to give you the absolute best news sources for any topic! Our topics are carefully curated and constantly updated as we know the web moves fast so we try to as well. 
+                </p>
+            </div><!--ending the inner-section here-->
+        </div><!--ending the about section here-->
+</body>
+</html>

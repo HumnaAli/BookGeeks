@@ -1,0 +1,100 @@
+*{/*selects all elements for the whole css overall*/
+    margin:0;/*used to create space around elements outside the border, top and bottom margin is 0*/
+    padding:0;/*space between the border and the content,set to 0*/
+    font-family: 'Oswald', sans-serif;/*the font for the whole page*/
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/genrebb.jpg);/* A gradient going from the top to bottom*/   
+    height: 100vh;/*vh is viewport height*/
+    background-size: cover;/*specify the size of background images which is cover*/
+    background-position: center center;
+    overflow-y: hidden;/*content is clipped - and no scrolling mechanism is provided*/
+}
+.wrapper{/*styling the div class wrapper*/
+  float: right;/*content to the right side os the page*/
+  list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+  margin-top: 40px;/*set the top margin of an element to 40px*/
+}
+.wrapper ul{/* styling the wrapper section and the sub section ul*/
+  list-style: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+  margin-top: 2%;/*set the top margin of an element to 2%*/
+  display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+}
+ul{/*setting the scetion ul*/
+  float: right;/*content to the right side os the page*/
+  list-style-type: none;/*specifies the type of list item marker here none applied to them will not be announced as a list*/
+  margin-top: 25px;/*set the top margin of an element to 25px*/
+}
+ul li{/*styling the li tag in the ul*/
+  display: inline-block;/*used so the links are shown side by side in a horizontal postion*/
+}
+ul li a{/*styling the a tag */
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 5px 20px;/* set to top 5 pixels and right 20 pixels*/
+  border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+  transition: 0.6s;/*transition duration*/
+}
+ul li a:hover{/*hover used to select elements when you mouse over them*/
+  background-color:#fff;
+  color: #000;
+ 
+}
+.wrapper ul li{/*styling the wrapper section and its sub section ul and its sub section li*/
+  background: transparent;/*the background is transparent so anything behind it can be seen*/
+  width: 170px;/*width set to 170 pixels*/
+  border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+  height: 50px;/*height set to 50 pixels*/
+  line-height: 50px;/*specifies the height of a line here it is set to 50 pixels*/
+  text-align: center;/*the alingnment of the text is set to the center*/
+  float: left;/*content to the left side os the page if it was right the order of the boxes would be changed*/
+  color: #fff;
+  font-size: 17px;/*font size is 17 pixels*/
+  position: relative;/*specify a length relative to another length property*/ 
+}
+ul li.active a{/*active used to select and style the active link in the li section which is in the ul section.*/
+  background-color:#fff;
+  color: #000;
+}
+ h1{/*styling h1*/
+    color: #fff;
+    font-size: 50px;/*font size set to 50 poixels*/
+    position: relative;/*specify a length relative to another length property*/ 
+    top: 120px;/*top of the page set to 120 pixels*/
+}
+
+  .container{/*styling the div class container*/
+    text-align: center;/*alignment of text is set to center*/
+    margin-top: 200px;/*top of the margin set to 200 pixels*/
+    position: relative;/*specify a length relative to another length property*/ 
+    top: -100px;/* top of the page set to -100 pixels*/
+  }
+  .btn{/*styling the button*/
+    border: 1px solid #f2f5f7;/*solid border set to 1 pixels abd its respective colour*/
+    background: none;/*transparent*/
+    padding: 25px 25px;/* set to top 25 pixels and right 25 pixels*/
+    font-size: 20px;/*font size set to 20 pixels*/
+    margin: 30px;/*margin set to 30 pixels*/
+    margin-top: 100px;/*top of margin set to 100 pixels*/
+    margin-left: 80px;/*left of margin set to 80 pixels*/
+    margin-right: 80px;/*right of margin set to 80 pixels*/
+    font-family: "montserrat";/*font*/
+    transition: 0.8s;/*transition duration*/
+  }
+  .btn1,.btn2,.btn3,.btn4{
+    color: #e9dd39;
+  }
+  
+  .btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover{
+    color: #fff;
+  }
+  .btn a{/*styling btn hyperlink*/ 
+    text-decoration: none;
+    color: #e9dd39;
+    padding: 20px 20px;/* set to top 20 pixels and right 20 pixels*/
+    border: 1px solid transparent;/* transparent border creater so the background can be seen,solid border,set to 1 pixels*/
+    font-family: "montserrat";/*font*/
+  }
+  .btn a:hover{/*styling the btn hyperlink hover when mouse is over it*/
+      color: #fff;
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <!--This is the title of the document-->
+     <title>BookGeeks</title>
+      <!--linking this html page to its respective css page-->
+    <link rel="stylesheet" href="romance.css">
+    
+</head>
+<body>
+            <h1>ROMANCE</h1><!--Main heading-->
+            
+    <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+    <!--Creating a menu-->
+            <div class="wrapper">
+                <ul>  <!--<ul> is an unordered list where the order of the is not important-->
+                     <!--<li> is list items and is usually under <ul>-->
+                     
+                    <li><a href="home.html">HOME</a></li>
+                    <!-- a href used to tag another html page-->
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                        <!--Creating a drop down menu-->
+                        <ul>
+                            <!--the class="active" is applied to the navigation element the user is currently viewing-->
+                            <li class="active"><a href="romance.html">ROMANCE</a></li>
+                            <li><a href="fiction.html">FICTION</a></li>
+                            <li><a href="nonfiction.html">NON-FICTION</a></li>
+                            <li><a href="horror.html">HORROR</a></li>
+                        </ul>
+                    </li><!--ending the drop down here-->
+                    <li> <a href="quotes.html">QUOTES</a></li>
+                </ul>
+            </div><!--Ending the menu here-->
+
+            <div class="container"><!--creating a section whose class is defined which would be later modified in the css page-->
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/allthebrightplaces.jpg" alt="Image"height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:All The Bright Place</h2>
+                        <p>Theme:Mental Illness, Guilt and Blame, Dreams, Hopes, and Plans</p>
+                        <p>Genre: Contemporary romance, Young Adult</p>
+                        <p>Author: Jennifer Niven</p>
+                        <button><a href="https://www.goodreads.com/book/show/18460392-all-the-bright-places/">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/everything.jpg" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:Everything Everything</h2>
+                        <p>Theme:The theme of the novel, Everything, everything, is that you must take risks in order to be satisfied with your life.</p>
+                        <p>Genre:Young Adult</p>
+                        <p>Author: Nicola Yoon, David Yoon</p>
+                        <button><a href="https://www.goodreads.com/book/show/18692431-everything-everything/">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+            <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/mebeforeyou.jpg" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:Me Before You</h2>
+                        <p>Theme:After becoming unemployed, Louisa Clark is forced to accept one which requires her to take care of Will Traynor, a paralysed man. The two of them soon bond with each other.</p>
+                        <p>Genre:Romance</p>
+                        <p>Author:Jojo Moyes</p>
+                        <button><a href="https://www.goodreads.com/book/show/17347634-me-before-you?ac=1&from_search=true&qid=FN99Yoflur&rank=2">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/Twilight.jpg"  height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:Twilight</h2>
+                        <p>Theme:The lesson in this theme is simple: the choices you make don't need to be governed by the obstacles that you face along the way.</p>
+                        <p>Genre:Fantasy,Romance</p>
+                        <p>Author:Stephanie Meyer</p>
+                        <button><a href="https://www.goodreads.com/book/show/41865.Twilight?ac=1&from_search=true&qid=VKdnTcVi7G&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+            </div><!--end of container-->
+</body>
+</html>

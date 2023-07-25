@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This is the title of the document-->
+     <title>BookGeeks</title>
+     <!--linking this html page to its respective css page-->
+     <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+    <!--Creating a menu-->
+    <div class="wrapper">
+        <!--<ul> is an unordered list where the order of the is not important-->
+        <ul>
+            <!--<li> is list items and is usually under <ul>-->
+            <!--the class="active" is applied to the navigation element the user is currently viewing-->
+            <li class="active"><a href="">HOME</a></li>
+            <!-- a href used to tag another html page-->
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                <!--Creating a drop down menu-->
+                <ul>
+                    <li><a href="romance.html">ROMANCE</a></li>
+                    <li><a href="fiction.html">FICTION</a></li>
+                    <li><a href="nonfiction.html">NON-FICTION</a></li>
+                    <li><a href="horror.html">HORROR</a></li>
+                </ul>
+            </li><!--ending the drop down here-->
+            <li><a href="quotes.html">QUOTES</a></li>
+        </ul>
+    </div><!--Ending the menu here-->
+    <div class="title"><!--creating a section whose class is defined which would be later modified in the css page-->
+        <h1>BookGeeks</h1><!--main heading-->
+    </div><!--ending the title section here-->
+    <div class="button"><!--creating a section whose class is defined which would be later modified in the css page-->
+        <h2>“Books are good company, in sad times and happy times, for books are people – people who have managed to stay alive by hiding between the covers of a book.” - E.B. White</h2>
+    </div><!--ending the button section here-->
+    
+</body>
+</html>

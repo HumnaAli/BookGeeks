@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--This is the title of the document-->
+     <title>BookGeeks</title>
+      <!--linking this html page to its respective css page-->
+    <link rel="stylesheet" href="horror.css">
+    
+</head>
+<body>
+            <h1>HORROR</h1><!--Main heading-->
+            <!--<div>tag used to define a divison or section of a html page and the class is defined so we can modify the contents in the css file-->
+            <!--Creating a menu-->
+            <div class="wrapper">
+                <ul>
+                    <!--<ul> is an unordered list where the order of the is not important-->
+                     <!--<li> is list items and is usually under <ul>-->
+                    <li><a href="home.html">HOME</a></li>
+                     <!-- a href used to tag another html page-->
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="genre.html">GENRE</a><!--here we are not ending the <li> tag because we are creating a drop down for genre-->
+                        <!--Creating a drop down menu-->
+                        <ul>
+                            <li><a href="romance.html">ROMANCE</a></li>
+                            <li><a href="home.html">FICTION</a></li>
+                            <li><a href="nonfiction.html">NON-FICTION</a></li>
+                            <li class="active"><a href="">HORROR</a></li>
+                            <!--the class="active" is applied to the navigation element the user is currently viewing-->
+                        </ul>
+                    </li><!--ending the drop down here-->
+                    <li> <a href="quotes.html">QUOTES</a></li>
+                </ul>
+            </div><!--Ending the menu here-->
+
+            <div class="container"><!--creating a section whose class is defined which would be later modified in the css page-->
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/woman.jpeg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:The Woman In Black</h2>
+                        <p>Theme:he main themes in this ghost story by Susan Hill are fear, isolation and the influence of the past. ... Other ideas that are dealt with include the conflict between urban and rural life, revenge and, of course, the theme of the supernatural.</p>
+                        <p>Genre:Horror</p>
+                        <p>Author:Susan Hill</p>
+                        <button><a href="https://www.goodreads.com/book/show/37034.The_Woman_in_Black?ac=1&from_search=true&qid=ZWxTHrgiX5&rank=4">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+                
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of container-->
+                        <img src="images/frabkenstein.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of container-->
+                        <h2>Title:Frankenstein</h2>
+                        <p>Theme:The theme of creation is at the center of the novel, Frankenstein. The story shows how Victor creates a monster and instills life in it after gaining scientific knowledge of life at Ingolstadt. Victor plays God or pretends to become one to create life. His ambition of creating life and emulating his own creation fails.</p>
+                        <p>Genre:Horror</p>
+                        <p>Author:Mary Shelly</p>
+                        <button><a href="https://www.goodreads.com/book/show/35031085-frankenstein?ac=1&from_search=true&qid=XJm0L0qw3N&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+            <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/dracula.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title:Dracula</h2>
+                        <p>THEME:Dracula revolves around the theme of good versus evil. Count Dracula is the epitome of evil and the men in the Crew of Light are inherently good.</p>
+                        <p>Genre:Horror</p>
+                        <p>Author:Bram Stoker</p>
+                        <button><a href="https://www.goodreads.com/book/show/17245.Dracula?ac=1&from_search=true&qid=RKUQjHP4rH&rank=1">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+
+                <div class="book"><!--sub section of container-->
+                    <div class="icon"><!--sub section of book-->
+                        <img src="images/outsider.jpg" alt="Image" height="200" width="200">
+                    </div>
+                    <div class="content"><!--sub section of book-->
+                        <h2>Title: The Outsider</h2>
+                        <p>Theme:An creepy and intriguing investigation into an unspeakable crime</p>
+                        <p>Genre: Horror,Suspense</p>
+                        <p>Author:Stephen King</p>
+                        <button><a href="https://www.goodreads.com/book/show/36124936-the-outsider?ac=1&from_search=true&qid=u6HR354pa0&rank=3">READ IT</a></button>
+                    </div><!--end of section content-->
+                </div><!--end of section book-->
+            </div>
+</body>
+</html>
